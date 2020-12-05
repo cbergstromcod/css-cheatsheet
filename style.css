@@ -37,6 +37,58 @@ body {
   text-align: center;
 }
 
-#fonts2 {
-  width: 81%;
+#floats {
+  width: 90%;
+}
+
+@media screen and (min-width: 600px) {
+  #floats {
+    width: 10%;
+  }
+}
+
+#static {
+  position: static;
+  top: 30px;
+  bottom: 300px;
+  background-color: yellow;
+}
+#relative {
+  position: relative;
+  top: 300px;
+  background-color: yellow;
+}
+#fixed {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  background-color: yellow;
+}
+#absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+}
+#sticky {
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+} 
+#background {
+  /* position: relative; */
+  width: 250px;
+  height: 250px;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* position: relative;  */
+}
+
+#background:hover {
+  /* background-image: unset; */
+}
+
+.space {
+  margin-bottom: 250px;
 }
